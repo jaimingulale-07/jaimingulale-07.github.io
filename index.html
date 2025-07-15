@@ -1,77 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaimin Gulale | Portfolio</title>
-  <link href="style.css" rel="stylesheet" />
-</head>
-<body>
-  <header class="hero fade-in">
-    <h1>Jaimin Gulale</h1>
-    <p>Electronics & Communication Engineer | FPGA & Digital Design Enthusiast</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </header>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  scroll-behavior: smooth;
+}
 
-  <nav class="nav fade-in">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+a {
+  color: #66ccff;
+  text-decoration: none;
+}
 
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>I’m an Electronics & Communication Engineering student with a focus on FPGA, VLSI, and digital systems. I build systems using Verilog, simulate circuits in LTspice, and design tools with ASP.NET Core and Python.</p>
-  </section>
+.hero {
+  background: #1f1f1f;
+  text-align: center;
+  padding: 4rem 2rem;
+}
 
-  <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>Verilog</li>
-      <li>MATLAB</li>
-      <li>Python</li>
-      <li>ASP.NET Core</li>
-      <li>LTspice</li>
-      <li>Logisim</li>
-      <li>C#</li>
-      <li>Quartus</li>
-    </ul>
-  </section>
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
 
-  <section id="projects" class="fade-in">
-    <h2>Projects</h2>
+.hero p {
+  font-size: 1.2rem;
+}
 
-    <div class="project-card">
-      <h3>RISC-V VLSI Emulator</h3>
-      <p>Simulates RISC-V instruction execution using ASP.NET Core and SQLite.</p>
-      <a href="https://github.com/jaimingulale-07/PROJECTS/blob/main/RISC-V.zip" target="_blank">View Files</a>
-    </div>
+.btn {
+  background: #2d2dff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+}
 
-    <div class="project-card">
-      <h3>Image Processing Project</h3>
-      <p>Image enhancement and feature extraction with MATLAB and Python.</p>
-      <a href="https://github.com/jaimingulale-07/PROJECTS/blob/main/IP_FINAL%20(2).pdf" target="_blank">Report</a>
-    </div>
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #222;
+  padding: 1rem;
+}
 
-    <div class="project-card">
-      <h3>Voltage Sense Amplifier (LTspice)</h3>
-      <p>Designed for detecting differential voltages in memory using LTspice.</p>
-      <a href="https://github.com/jaimingulale-07/PROJECTS/blob/main/voltage_sense_amplifier.asc" target="_blank">Schematic</a>
-    </div>
+.navbar a {
+  font-weight: bold;
+  color: #2d9eff;
+}
 
-    <!-- Add more project cards if needed -->
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
 
-  </section>
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  list-style: none;
+  padding: 0;
+}
 
-  <section id="contact" class="fade-in">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:jaiminkumargulale@gmail.com">jaiminkumargulale@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/jaimingulale-07" target="_blank">jaimingulale-07</a></p>
-  </section>
+.skills li {
+  background: #2d2dff;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+}
 
-  <footer>
-    <p>© 2025 Jaimin Gulale</p>
-  </footer>
-</body>
-</html>
+.project {
+  background: #1e1e1e;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #2d2dff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1f1f1f;
+  color: #999;
+}
