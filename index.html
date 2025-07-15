@@ -1,98 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaimin Gulale | Project Playground</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f7f9fc;
-            color: #333;
-        }
-        header {
-            background-color: #2d2dff;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        section {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            border-bottom: 2px solid #2d2dff;
-            padding-bottom: 0.5rem;
-        }
-        .project {
-            margin-bottom: 2rem;
-        }
-        .badge {
-            background-color: #2d2dff;
-            color: white;
-            padding: 0.2rem 0.5rem;
-            border-radius: 5px;
-            font-size: 0.9rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #2d2dff;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaimin Gulale | Portfolio</title>
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>Jaimin Gulale</h1>
-        <p>Electronics & Communication Engineer | FPGA & Simulation Enthusiast</p>
-        <p>📧 jaiminkumargulale@gmail.com</p>
-    </header>
-    <section>
-        <h2>🚀 Projects</h2>
-        <div class="project">
-            <h3>RISC-V VLSI Emulator <span class="badge">Completed</span></h3>
-            <p>Web-based RISC-V simulator showing instruction execution.</p>
-        </div>
-        <div class="project">
-            <h3>IP_FINAL Image Processing <span class="badge">Completed</span></h3>
-            <p>Image enhancement and feature extraction using MATLAB & Python.</p>
-        </div>
-        <div class="project">
-            <h3>Shift Testing Project <span class="badge">Completed</span></h3>
-            <p>Evaluating hardware shift operations using Verilog.</p>
-        </div>
-        <div class="project">
-            <h3>FPGA Image Compression <span class="badge">Completed</span></h3>
-            <p>FPGA-based image compression using Verilog/VHDL.</p>
-        </div>
-        <div class="project">
-            <h3>MnM Simulation Demo <span class="badge">Demo Ready</span></h3>
-            <p>Visual simulation demo built in MATLAB.</p>
-        </div>
-        <div class="project">
-            <h3>Digital Logic Design Assignment <span class="badge">Completed</span></h3>
-            <p>Designing circuits using Logisim and Verilog.</p>
-        </div>
-        <div class="project">
-            <h3>MnM Special Assignment <span class="badge">Completed</span></h3>
-            <p>Simulation theory and results for MnM.</p>
-        </div>
-        <div class="project">
-            <h3>Voltage Sense Amplifier (LTspice) <span class="badge">Simulated</span></h3>
-            <p>LTspice amplifier for detecting differential voltages.</p>
-        </div>
-    </section>
-    <section>
-        <h2>🛠️ Skills</h2>
-        <p>Verilog, Python, MATLAB, ASP.NET Core (C#), LTspice, Logisim, Quartus</p>
-    </section>
-    <footer>
-        <p>© 2025 Jaimin Gulale</p>
-    </footer>
+  <header class="hero">
+    <h1>Jaimin Gulale</h1>
+    <p>Electronics & Communication Engineer | FPGA & Digital Design Enthusiast</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m an Electronics & Communication Engineering student with a focus on FPGA, VLSI, and digital systems. I build systems using Verilog, simulate circuits in LTspice, and design tools with ASP.NET Core and Python.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Verilog</li>
+      <li>MATLAB</li>
+      <li>Python</li>
+      <li>ASP.NET Core</li>
+      <li>LTspice</li>
+      <li>Logisim</li>
+      <li>C#</li>
+      <li>Quartus</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>RISC-V VLSI Emulator</h3>
+      <p>Simulates RISC-V instruction execution using ASP.NET Core and SQLite.</p>
+      <a href="https://github.com/jaimingulale-07/PROJECTS/blob/main/RISC-V.zip" target="_blank">View Files</a>
+    </div>
+    <div class="project-card">
+      <h3>Image Processing Project</h3>
+      <p>Image enhancement and feature extraction with MATLAB and Python.</p>
+      <a href="https://github.com/jaimingulale-07/PROJECTS/blob/main/IP_FINAL%20(2).pdf" target="_blank">Report</a>
+    </div>
+    <div class="project-card">
+      <h3>Voltage Sense Amplifier (LTspice)</h3>
+      <p>Designed for detecting differential voltages in memory using LTspice.</p>
+      <a href="https://github.com/jaimingulale-07/PROJECTS/blob/main/voltage_sense_amplifier.asc" target="_blank">Schematic</a>
+    </div>
+    <!-- Add more project cards if you'd like -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:jaiminkumargulale@gmail.com">jaiminkumargulale@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/jaimingulale-07" target="_blank">jaimingulale-07</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Jaimin Gulale</p>
+  </footer>
 </body>
 </html>
